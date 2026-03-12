@@ -130,6 +130,7 @@ STATIC_URL = 'static/'
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
+    "https://catalogo-productos-production-566c.up.railway.app",
 ]
 
 REST_FRAMEWORK = {
@@ -142,6 +143,10 @@ REST_FRAMEWORK = {
         'rest_framework_simplejwt.authentication.JWTAuthentication',
         ),
 }
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://catalogo-productos-production-566c.up.railway.app",
+]
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
