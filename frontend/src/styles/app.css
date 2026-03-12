@@ -1,0 +1,369 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #1f2937;
+  }
+  
+  button,
+  input,
+  select {
+    font: inherit;
+  }
+  
+  .app-shell {
+    min-height: 100vh;
+    padding: 32px 16px;
+  }
+  
+  .page-container {
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+  
+  .page-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 28px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    border: 1px solid #e5e7eb;
+  }
+  
+  .page-header {
+    margin-bottom: 24px;
+  }
+  
+  .page-title {
+    margin: 0 0 8px;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #111827;
+  }
+  
+  .page-subtitle {
+    margin: 0;
+    color: #6b7280;
+    font-size: 0.98rem;
+  }
+  
+  .session-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #eef2ff;
+    color: #3730a3;
+    padding: 10px 14px;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 22px;
+  }
+  
+  .toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 22px;
+  }
+  
+  .filters-card,
+  .form-card,
+  .upload-card,
+  .list-card,
+  .auth-card,
+  .home-card {
+    background: #f9fbff;
+    border: 1px solid #e5edf7;
+    border-radius: 18px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .filters-form {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 12px;
+    align-items: end;
+  }
+  
+  .field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .field-group label {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: #374151;
+  }
+  
+  .input,
+  .select,
+  .file-input {
+    width: 100%;
+    min-height: 44px;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    background: #fff;
+    padding: 0 14px;
+    outline: none;
+    transition: 0.2s ease;
+  }
+  
+  .file-input {
+    padding: 10px 14px;
+  }
+  
+  .input:focus,
+  .select:focus,
+  .file-input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+  }
+  
+  .btn {
+    border: none;
+    border-radius: 12px;
+    min-height: 44px;
+    padding: 0 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+  
+  .btn:hover {
+    transform: translateY(-1px);
+  }
+  
+  .btn-primary {
+    background: #2563eb;
+    color: #fff;
+  }
+  
+  .btn-primary:hover {
+    background: #1d4ed8;
+  }
+  
+  .btn-success {
+    background: #059669;
+    color: #fff;
+  }
+  
+  .btn-success:hover {
+    background: #047857;
+  }
+  
+  .btn-danger {
+    background: #dc2626;
+    color: #fff;
+  }
+  
+  .btn-danger:hover {
+    background: #b91c1c;
+  }
+  
+  .btn-secondary {
+    background: #e5e7eb;
+    color: #111827;
+  }
+  
+  .btn-secondary:hover {
+    background: #d1d5db;
+  }
+  
+  .btn-warning {
+    background: #f59e0b;
+    color: #fff;
+  }
+  
+  .btn-warning:hover {
+    background: #d97706;
+  }
+  
+  .btn-sm {
+    min-height: 38px;
+    padding: 0 14px;
+    font-size: 0.92rem;
+  }
+  
+  .form-title,
+  .section-title {
+    margin: 0 0 16px;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #111827;
+  }
+  
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+  
+  .form-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 18px;
+  }
+  
+  .message {
+    margin-top: 14px;
+    padding: 12px 14px;
+    border-radius: 12px;
+    font-weight: 600;
+    background: #eef2ff;
+    color: #3730a3;
+  }
+  
+  .products-grid {
+    display: grid;
+    gap: 14px;
+  }
+  
+  .product-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 18px;
+    transition: 0.2s ease;
+  }
+  
+  .product-item:hover {
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+    border-color: #dbe4f0;
+  }
+  
+  .product-info {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .product-name {
+    margin: 0 0 8px;
+    font-size: 1.08rem;
+    font-weight: 800;
+    color: #111827;
+  }
+  
+  .product-meta {
+    margin: 0;
+    color: #4b5563;
+    line-height: 1.6;
+  }
+  
+  .product-price {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 10px;
+    background: #ecfdf5;
+    color: #047857;
+    border-radius: 999px;
+    font-weight: 800;
+    font-size: 0.92rem;
+  }
+  
+  .product-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .suggestions-box {
+    margin-top: 8px;
+    border: 1px solid #dbe3ee;
+    border-radius: 14px;
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+  }
+  
+  .suggestion-item {
+    padding: 10px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #374151;
+    transition: 0.2s ease;
+  }
+  
+  .suggestion-item:hover {
+    background: #eff6ff;
+    color: #1d4ed8;
+  }
+  
+  .empty-state {
+    text-align: center;
+    padding: 28px 18px;
+    color: #6b7280;
+  }
+  
+  .home-actions,
+  .auth-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 18px;
+  }
+  
+  .auth-wrapper,
+  .home-wrapper {
+    max-width: 520px;
+    margin: 40px auto 0;
+  }
+  
+  @media (max-width: 900px) {
+    .filters-form {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .form-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .product-item {
+      flex-direction: column;
+    }
+  
+    .product-actions {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .app-shell {
+      padding: 18px 10px;
+    }
+  
+    .page-card {
+      padding: 18px;
+      border-radius: 16px;
+    }
+  
+    .page-title {
+      font-size: 1.6rem;
+    }
+  
+    .filters-form {
+      grid-template-columns: 1fr;
+    }
+  
+    .toolbar,
+    .form-actions,
+    .home-actions,
+    .auth-actions {
+      flex-direction: column;
+    }
+  
+    .btn {
+      width: 100%;
+    }
+  }
