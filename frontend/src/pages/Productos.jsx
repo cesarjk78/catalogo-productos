@@ -135,7 +135,7 @@ function Productos({ onVolver, esAdmin }) {
             <button
               className="btn btn-primary"
               onClick={() =>
-                window.open("http://127.0.0.1:8000/api/productos/exportar_excel/", "_blank")
+                window.open(`https://catalogo-productos-production-566c.up.railway.app/api/productos/${producto.id}/pdf/`, "_blank")
               }
             >
               Exportar Excel
@@ -337,7 +337,7 @@ function Productos({ onVolver, esAdmin }) {
                         className="btn btn-primary btn-sm"
                         onClick={() =>
                           window.open(
-                            `http://127.0.0.1:8000/api/productos/${producto.id}/pdf/`,
+                            `https://catalogo-productos-production-566c.up.railway.app/api/productos/${producto.id}/pdf/`,
                             "_blank"
                           )
                         }
