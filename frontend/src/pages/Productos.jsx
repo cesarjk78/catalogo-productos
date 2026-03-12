@@ -135,7 +135,7 @@ function Productos({ onVolver, esAdmin }) {
             <button
               className="btn btn-primary"
               onClick={() =>
-                window.open(`https://catalogo-productos-production-566c.up.railway.app/api/productos/${producto.id}/pdf/`, "_blank")
+                window.open("https://catalogo-productos-production-566c.up.railway.app/api/productos/exportar_excel/", "_blank")
               }
             >
               Exportar Excel
